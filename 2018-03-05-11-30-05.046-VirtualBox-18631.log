@@ -1,0 +1,14 @@
+Log created: 2018-03-05T11:30:05.466673000Z
+Executable: /usr/lib/virtualbox/VirtualBox
+Arg[0]: /usr/lib/virtualbox/VirtualBox
+Arg[1]: --comment
+Arg[2]: warry
+Arg[3]: --startvm
+Arg[4]: 12a35723-1623-401d-b1c1-6d7651be2945
+Arg[5]: --no-startvm-errormsgbox
+Arg[6]: --separate
+
+!!Assertion Failed!!
+Expression: state <= 1 && ( (state == 0 && count == 0) || (state == 1 && count < PR_UINT32_MAX/2))
+Location  : /home/vbox/vbox-5.2.4/src/libs/xpcom18a4/xpcom/components/nsComponentManager.cpp(939) virtual nsrefcnt nsComponentManagerImpl::AddRef()
+AddRef: illegal refcnt=0 state=2

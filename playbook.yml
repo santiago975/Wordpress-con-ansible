@@ -1,0 +1,9 @@
+- hosts: funny
+
+  roles:
+    - wordpress
+    - mysql
+    - nginx
+    - php
+    
+
